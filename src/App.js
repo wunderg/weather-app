@@ -60,7 +60,6 @@ function App() {
   );
 }
 
-
 async function getWeather(props) {
   return await fetch(`https://api.weatherapi.com/v1/forecast.json?key=fb0e6949c1e34887bac233528201204&q=${props.latitude.toFixed(2)},${props.longitude.toFixed(2)}&days=${props.days}`)
 }
